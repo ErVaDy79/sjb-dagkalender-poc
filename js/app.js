@@ -1,5 +1,9 @@
 import { loadAppConfig } from "./config.js";
-import { showPage } from "./renderer.js";
+import {
+  showPage,
+  showServerTime,
+  showServerTimeUnavailable
+} from "./renderer.js";
 import { getCurrentServerTime } from "./time.js";
 
 // Hardcoded page content for PoC.
@@ -73,19 +77,25 @@ function showNextPage() {
   showCurrentPage();
 }
 
+async function updateServerTimeDisplay() {
+  try {
+    const serverTime = await getCurrentServerTime();
+    showServerTime(serverTime);
+  } catch (error) {
+    showServerTimeUnavailable();
+    console.warn("Server time unavailable. The page loop will continue.", error);
+  }
+}
+
 async function startApp() {
   const appConfig = await loadAppConfig();
 
-  try {
-    const serverTime = await getCurrentServerTime();
-    console.log("Server time:", serverTime);
-  } catch (error) {
-    console.warn("Server time unavailable. The page loop will continue.", error);
-  }
-
   showCurrentPage();
+  updateServerTimeDisplay();
 
   setInterval(showNextPage, appConfig.pageDurationSeconds * 1000);
+  setInterval(updateServerTimeDisplay, appConfig.serverTimeRefreshSeconds * 1000);
 }
+
 
 startApp();

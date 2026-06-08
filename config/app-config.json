@@ -1,5 +1,6 @@
 {
   "schoolName": "SJB",
   "schoolTimeZone": "Europe/Brussels",
-  "pageDurationSeconds": 5
+  "pageDurationSeconds": 5,
+  "serverTimeRefreshSeconds": 60
 }
