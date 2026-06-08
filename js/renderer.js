@@ -18,8 +18,6 @@ export function showPage(page, pageIndex, totalPages) {
   });
 }
 
-// Gets current time from the server
-
 export function showServerTime(serverTime) {
   serverTimeElement.textContent = `Servertijd: ${serverTime.toLocaleTimeString("nl-BE")}`;
 }

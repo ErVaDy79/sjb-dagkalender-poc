@@ -97,5 +97,4 @@ async function startApp() {
   setInterval(updateServerTimeDisplay, appConfig.serverTimeRefreshSeconds * 1000);
 }
 
-
 startApp();
