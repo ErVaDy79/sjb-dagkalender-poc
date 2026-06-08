@@ -4,5 +4,5 @@
   "displayLocale": "nl-BE",
   "pageDurationSeconds": 5,
   "serverTimeRefreshSeconds": 60,
-  "ignoreTimeFiltering": true
+  "ignoreTimeFiltering": false
 }
