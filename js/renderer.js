@@ -21,7 +21,8 @@ export function showServerTime(serverTime, appConfig) {
     timeZone: appConfig.schoolTimeZone,
     hour: "2-digit",
     minute: "2-digit",
-    hour12: false
+    hour12: false,
+    hourCycle: "h23"
   }).format(serverTime);
 
   serverTimeElement.textContent = `Servertijd: ${formattedServerTime}`;

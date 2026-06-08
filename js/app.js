@@ -4,98 +4,79 @@ import {
   showServerTime,
   showServerTimeUnavailable
 } from "./renderer.js";
-import { getCurrentServerTime } from "./time.js";
+import {
+  getCurrentServerTime,
+  getMinutesSinceMidnight
+} from "./time.js";
+import { loadSchoolHours } from "./schoolHours.js";
+import {
+  createCalendarPages,
+  updateDisplayPageFlags,
+  markAllPagesAsDisplayable,
+  getDisplayablePages
+} from "./pages.js";
 
-// Hardcoded page content for PoC.
-// Later this will move to a generated data file.
-const calendarPages = [
-  {
-    title: "Algemene informatie",
-    items: [
-      "Algemene informatie"
-    ]
-  },
-  {
-    title: "L1",
-    items: [
-      "Info lesuur 1"
-    ]
-  },
-  {
-    title: "L2",
-    items: [
-      "Info lesuur 2"
-    ]
-  },
-  {
-    title: "L3",
-    items: [
-      "Info lesuur 3"
-    ]
-  },
-  {
-    title: "L4",
-    items: [
-      "Info lesuur 4"
-    ]
-  },
-  {
-    title: "L5",
-    items: [
-      "Info lesuur 5"
-    ]
-  },
-  {
-    title: "L6",
-    items: [
-      "Info lesuur 6"
-    ]
-  },
-  {
-    title: "L7",
-    items: [
-      "Info lesuur 7"
-    ]
-  }
-];
-
-let currentPageIndex = 0;
 let appConfig = null;
+let calendarPages = [];
+let currentPageIndex = 0;
 
 function showCurrentPage() {
-  const currentPage = calendarPages[currentPageIndex];
+  const displayablePages = getDisplayablePages(calendarPages);
 
-  showPage(currentPage, currentPageIndex, calendarPages.length);
+  if (displayablePages.length === 0) {
+    markAllPagesAsDisplayable(calendarPages);
+    showCurrentPage();
+    return;
+  }
+
+  if (currentPageIndex >= displayablePages.length) {
+    currentPageIndex = 0;
+  }
+
+  const currentPage = displayablePages[currentPageIndex];
+
+  showPage(currentPage, currentPageIndex, displayablePages.length);
 }
 
 function showNextPage() {
+  const displayablePages = getDisplayablePages(calendarPages);
+
   currentPageIndex = currentPageIndex + 1;
 
-  if (currentPageIndex >= calendarPages.length) {
+  if (currentPageIndex >= displayablePages.length) {
     currentPageIndex = 0;
   }
 
   showCurrentPage();
 }
 
-async function updateServerTimeDisplay() {
+async function updateServerTimeAndPageFlags() {
   try {
     const serverTime = await getCurrentServerTime();
+    const currentMinutesSinceMidnight = getMinutesSinceMidnight(serverTime, appConfig);
+
+    updateDisplayPageFlags(calendarPages, currentMinutesSinceMidnight);
     showServerTime(serverTime, appConfig);
   } catch (error) {
+    markAllPagesAsDisplayable(calendarPages);
     showServerTimeUnavailable();
-    console.warn("Server time unavailable. The page loop will continue.", error);
+    console.warn("Server time unavailable. All pages will be displayed.", error);
   }
+
+  showCurrentPage();
 }
 
 async function startApp() {
   appConfig = await loadAppConfig();
 
+  const schoolHours = await loadSchoolHours();
+  calendarPages = createCalendarPages(schoolHours);
+
   showCurrentPage();
-  updateServerTimeDisplay();
+  updateServerTimeAndPageFlags();
 
   setInterval(showNextPage, appConfig.pageDurationSeconds * 1000);
-  setInterval(updateServerTimeDisplay, appConfig.serverTimeRefreshSeconds * 1000);
+  setInterval(updateServerTimeAndPageFlags, appConfig.serverTimeRefreshSeconds * 1000);
 }
 
 startApp();
