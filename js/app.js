@@ -1,5 +1,9 @@
-// Hardcoded page content for PoC
-// Later to be replaced with content generated dynamically 
+import { loadAppConfig } from "./config.js";
+import { showPage } from "./renderer.js";
+import { getCurrentServerTime } from "./time.js";
+
+// Hardcoded page content for PoC.
+// Later this will move to a generated data file.
 const calendarPages = [
   {
     title: "Algemene informatie",
@@ -51,27 +55,12 @@ const calendarPages = [
   }
 ];
 
-// Keeps track of which page is currently visible
 let currentPageIndex = 0;
 
-// Get the HTML elements that JavaScript needs to update
-const pageTitleElement = document.getElementById("pageTitle");
-const pageItemsElement = document.getElementById("pageItems");
-const pageIndicatorElement = document.getElementById("pageIndicator");
+function showCurrentPage() {
+  const currentPage = calendarPages[currentPageIndex];
 
-function showPage(pageIndex) {
-  const page = calendarPages[pageIndex];
-
-  pageTitleElement.textContent = page.title;
-  pageIndicatorElement.textContent = `Pagina ${pageIndex + 1} van ${calendarPages.length}`;
-
-  pageItemsElement.innerHTML = "";
-
-  page.items.forEach(function (item) {
-    const listItem = document.createElement("li");
-    listItem.textContent = item;
-    pageItemsElement.appendChild(listItem);
-  });
+  showPage(currentPage, currentPageIndex, calendarPages.length);
 }
 
 function showNextPage() {
@@ -81,11 +70,22 @@ function showNextPage() {
     currentPageIndex = 0;
   }
 
-  showPage(currentPageIndex);
+  showCurrentPage();
 }
 
-// Show the first page immediately
-showPage(currentPageIndex);
+async function startApp() {
+  const appConfig = await loadAppConfig();
 
-// Switch to the next page every 5 seconds
-setInterval(showNextPage, 5000);
+  try {
+    const serverTime = await getCurrentServerTime();
+    console.log("Server time:", serverTime);
+  } catch (error) {
+    console.warn("Server time unavailable. The page loop will continue.", error);
+  }
+
+  showCurrentPage();
+
+  setInterval(showNextPage, appConfig.pageDurationSeconds * 1000);
+}
+
+startApp();
