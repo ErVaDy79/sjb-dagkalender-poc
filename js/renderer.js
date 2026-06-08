@@ -3,6 +3,7 @@
 const pageTitleElement = document.getElementById("pageTitle");
 const pageItemsElement = document.getElementById("pageItems");
 const pageIndicatorElement = document.getElementById("pageIndicator");
+const serverTimeElement = document.getElementById("serverTime");
 
 export function showPage(page, pageIndex, totalPages) {
   pageTitleElement.textContent = page.title;
@@ -18,8 +19,6 @@ export function showPage(page, pageIndex, totalPages) {
 }
 
 // Gets current time from the server
-
-const serverTimeElement = document.getElementById("serverTime");
 
 export function showServerTime(serverTime) {
   serverTimeElement.textContent = `Servertijd: ${serverTime.toLocaleTimeString("nl-BE")}`;
