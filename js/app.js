@@ -28,6 +28,10 @@ async function refreshTimeBasedDisplay() {
 
     updateDisplayPageFlags(calendarPages, currentMinutesSinceMidnight, appConfig);
     showServerTime(serverTime, appConfig);
+
+    console.log("Displayable calendar pages:", calendarPages.filter(function (page) {
+      return page.displayPage === true;
+    }));
   } catch (error) {
     markAllPagesAsDisplayable(calendarPages);
     showServerTimeUnavailable();
@@ -40,9 +44,16 @@ async function refreshTimeBasedDisplay() {
 async function startApp() {
   appConfig = await loadAppConfig();
 
+  console.log("Loaded app config:", appConfig);
+
   const schoolHours = await loadSchoolHours();
 
+  console.log("Loaded school hours:", schoolHours);
+
   calendarPages = createCalendarPages(schoolHours);
+
+  console.log("Created calendar pages:", calendarPages);
+
   markAllPagesAsDisplayable(calendarPages);
 
   showCurrentPage(calendarPages);
