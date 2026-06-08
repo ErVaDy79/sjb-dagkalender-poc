@@ -16,11 +16,13 @@ export function showPage(page, pageIndex, totalPages) {
   });
 }
 
-export function showServerTime(serverTime) {
-  const formattedServerTime = serverTime.toLocaleTimeString("nl-BE", {
+export function showServerTime(serverTime, appConfig) {
+  const formattedServerTime = new Intl.DateTimeFormat(appConfig.displayLocale, {
+    timeZone: appConfig.schoolTimeZone,
     hour: "2-digit",
-    minute: "2-digit"
-  });
+    minute: "2-digit",
+    hour12: false
+  }).format(serverTime);
 
   serverTimeElement.textContent = `Servertijd: ${formattedServerTime}`;
 }

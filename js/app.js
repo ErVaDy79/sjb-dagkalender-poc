@@ -60,6 +60,7 @@ const calendarPages = [
 ];
 
 let currentPageIndex = 0;
+let appConfig = null;
 
 function showCurrentPage() {
   const currentPage = calendarPages[currentPageIndex];
@@ -80,7 +81,7 @@ function showNextPage() {
 async function updateServerTimeDisplay() {
   try {
     const serverTime = await getCurrentServerTime();
-    showServerTime(serverTime);
+    showServerTime(serverTime, appConfig);
   } catch (error) {
     showServerTimeUnavailable();
     console.warn("Server time unavailable. The page loop will continue.", error);
@@ -88,7 +89,7 @@ async function updateServerTimeDisplay() {
 }
 
 async function startApp() {
-  const appConfig = await loadAppConfig();
+  appConfig = await loadAppConfig();
 
   showCurrentPage();
   updateServerTimeDisplay();
