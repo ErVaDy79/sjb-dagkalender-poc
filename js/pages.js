@@ -16,7 +16,7 @@ export function createCalendarPages(schoolHours) {
     pages.push({
       title: schoolHour.code,
       items: [
-        `Info lesuur ${schoolHour.code.replace("L", "")}`
+        `Info ${schoolHour.code}`
       ],
       startTime: schoolHour.startTime,
       endTime: schoolHour.endTime,
@@ -28,7 +28,12 @@ export function createCalendarPages(schoolHours) {
   return pages;
 }
 
-export function updateDisplayPageFlags(calendarPages, currentMinutesSinceMidnight) {
+export function updateDisplayPageFlags(calendarPages, currentMinutesSinceMidnight, appConfig) {
+  if (appConfig.ignoreTimeFiltering === true) {
+    markAllPagesAsDisplayable(calendarPages);
+    return;
+  }
+
   calendarPages.forEach(function (page) {
     if (page.alwaysDisplay === true) {
       page.displayPage = true;
