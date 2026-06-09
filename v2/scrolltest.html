@@ -397,5 +397,93 @@
       </section>
     </section>
   </main>
+
+  <script>
+  function getUrlNumberParameter(parameterName, defaultValue) {
+    const urlParameters = new URLSearchParams(window.location.search);
+    const rawValue = urlParameters.get(parameterName);
+
+    if (rawValue === null) {
+      return defaultValue;
+    }
+
+    const parsedValue = Number(rawValue);
+
+    if (Number.isNaN(parsedValue) || parsedValue <= 0) {
+      return defaultValue;
+    }
+
+    return parsedValue;
+  }
+
+  function wait(milliseconds) {
+    return new Promise(function (resolve) {
+      setTimeout(resolve, milliseconds);
+    });
+  }
+
+  async function scrollToPosition(targetScrollY, scrollSpeedPixelsPerSecond) {
+    return new Promise(function (resolve) {
+      const startScrollY = window.scrollY;
+      const distance = targetScrollY - startScrollY;
+      const direction = distance >= 0 ? 1 : -1;
+      const totalDistance = Math.abs(distance);
+
+      if (totalDistance === 0) {
+        resolve();
+        return;
+      }
+
+      let previousTimestamp = null;
+      let scrolledDistance = 0;
+
+      function step(currentTimestamp) {
+        if (previousTimestamp === null) {
+          previousTimestamp = currentTimestamp;
+        }
+
+        const elapsedSeconds = (currentTimestamp - previousTimestamp) / 1000;
+        previousTimestamp = currentTimestamp;
+
+        scrolledDistance = scrolledDistance + scrollSpeedPixelsPerSecond * elapsedSeconds;
+
+        if (scrolledDistance >= totalDistance) {
+          window.scrollTo(0, targetScrollY);
+          resolve();
+          return;
+        }
+
+        window.scrollTo(0, startScrollY + direction * scrolledDistance);
+        requestAnimationFrame(step);
+      }
+
+      requestAnimationFrame(step);
+    });
+  }
+
+  async function startAutoScroll() {
+    const scrollSpeed = getUrlNumberParameter("scrollspeed", null);
+    const pauseSeconds = getUrlNumberParameter("pause", 3);
+
+    if (scrollSpeed === null) {
+      return;
+    }
+
+    const pauseMilliseconds = pauseSeconds * 1000;
+
+    while (true) {
+      const bottomScrollY = document.documentElement.scrollHeight - window.innerHeight;
+
+      await scrollToPosition(bottomScrollY, scrollSpeed);
+      await wait(pauseMilliseconds);
+
+      await scrollToPosition(0, scrollSpeed);
+      await wait(pauseMilliseconds);
+    }
+  }
+
+  startAutoScroll();
+</script>
+
 </body>
 </html>
