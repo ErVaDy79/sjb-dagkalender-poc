@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dagkalender – Overzicht</title>
+
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/overview.css">
+</head>
+<body>
+    <main id="calendar-page" class="calendar-page">
+        <header class="calendar-header">
+            <div id="calendar-date" class="calendar-date"></div>
+        </header>
+
+        <div
+            id="calendar-status"
+            class="calendar-status"
+            aria-live="polite"
+        ></div>
+
+        <div class="content-wrapper">
+            <section class="content-column" id="left-column">
+                <div class="content" id="left-content"></div>
+            </section>
+
+            <section class="content-column" id="right-column">
+                <div class="content" id="right-content"></div>
+            </section>
+        </div>
+    </main>
+
+    <div id="measurement-container" aria-hidden="true">
+        <div id="measurement-content" class="content"></div>
+    </div>
+
+    <script type="module" src="../js/pages/overview-page.js"></script>
+</body>
+</html>

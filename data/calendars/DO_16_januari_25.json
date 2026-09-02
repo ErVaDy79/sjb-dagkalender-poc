@@ -1,0 +1,1078 @@
+{
+  "date": {
+    "html": "<span style=\"color: #000000\">Donderdag 16 januari</span>",
+    "background_color": null
+  },
+  "announcements": {
+    "lines": [
+      {
+        "cells": {
+          "A": null,
+          "B": null,
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": null,
+          "B": null,
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": {
+            "html": "<span style=\"color: #000000\">*</span>",
+            "background_color": null
+          },
+          "B": {
+            "html": "<b><span style=\"color: #000000\">L. De Groote</span></b>",
+            "background_color": null
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": {
+            "html": "<span style=\"color: #000000\">*</span>",
+            "background_color": null
+          },
+          "B": {
+            "html": "<span style=\"color: #000000\">klasdag </span>",
+            "background_color": "#FFFFFF"
+          },
+          "C": {
+            "html": "<span style=\"color: #000000\">voor 3NWa (A. Wulleman, A. Jacobs (NM))</span>",
+            "background_color": null
+          },
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": {
+            "html": "<span style=\"color: #000000\">*</span>",
+            "background_color": null
+          },
+          "B": {
+            "html": "<span style=\"color: #000000\">klasdag voor 3MT-NWd (G. Vervoort, A. Jacobs (VM), J. Roosenbroeck (VM))</span>",
+            "background_color": "#FFFFFF"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": {
+            "html": "<span style=\"color: #000000\">*</span>",
+            "background_color": null
+          },
+          "B": {
+            "html": "<span style=\"color: #000000\">excursie Breendonk voor 2GL, 2La, 2Md, 2Mb en 2Mc (S. Scheers,</span>",
+            "background_color": "#FFFFFF"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": null,
+          "B": {
+            "html": "<span style=\"color: #000000\">K. Kauwenberghs, T. Bierten, I. De Wilde, M. De Beck, M. Gousseau)</span>",
+            "background_color": null
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      },
+      {
+        "cells": {
+          "A": {
+            "html": "<span style=\"color: #000000\">*</span>",
+            "background_color": null
+          },
+          "B": {
+            "html": "<span style=\"color: #000000\">9.15 uur: CPBW, QK</span>",
+            "background_color": "#FFFFFF"
+          },
+          "C": null,
+          "D": null,
+          "E": null,
+          "F": null,
+          "G": null,
+          "H": null,
+          "I": null
+        }
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "label": "1",
+      "title": "1e lesuur",
+      "start_time": "08:25",
+      "end_time": "09:15",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">3NWb</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">W01</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">A. Verhoeven</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">leestest (S)+ taak (S)</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">inhaalproefwerken</span>",
+              "background_color": "#FFFFFF"
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">VH!</span>",
+              "background_color": "#FFFFFF"
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">A. Van Gils</span>",
+              "background_color": "#FFFFFF"
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">proefwerk (S)</span>",
+              "background_color": "#FFFFFF"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "2",
+      "title": "2e lesuur",
+      "start_time": "09:15",
+      "end_time": "10:05",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4HW (LW1)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">W04</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">F. Proost</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">3NWb</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">W01</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">A. Spildooren</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">studie</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">1Ma</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">Z15</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">K. Van Looveren</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S) + taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">inhaalproefwerken</span>",
+              "background_color": "#FFFFFF"
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">VH!</span>",
+              "background_color": "#FFFFFF"
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">A. Van Gils</span>",
+              "background_color": "#FFFFFF"
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">proefwerk (S)</span>",
+              "background_color": "#FFFFFF"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "P1",
+      "title": "Pauze",
+      "start_time": "10:05",
+      "end_time": "10:25",
+      "lines": [
+        {
+          "cells": {
+            "A": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "B": {
+              "html": "<span style=\"color: #000000\">10.05-10.25 uur: speelplaats G</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": {
+              "html": "<span style=\"color: #000000\">C. De Jongh</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "B": {
+              "html": "<span style=\"color: #000000\">10.05-10.25 uur: speelplaats parking G</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": {
+              "html": "<span style=\"color: #000000\">S. Hendrickx</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "3",
+      "title": "3e lesuur",
+      "start_time": "10:25",
+      "end_time": "11:15",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4MT-EWd-EWb-EWa (Niet-CLIL)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">refter!</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">K. Dieltjens</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4HW (LW1)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">W04</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">E. Deca</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S) + taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">1Md</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">G16</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">K. Van Looveren</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S)</span>",
+              "background_color": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "4",
+      "title": "4e lesuur",
+      "start_time": "11:15",
+      "end_time": "12:05",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">3HW (LW2)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">SP</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><span style=\"color: #000000\">WB J. Storms</span></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<b><span style=\"color: #000000\">opruimtaak SP V + park</span></b>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">3EWb (LW2)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">V02!</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><s><span style=\"color: #000000\">WB J. Lempens</span></s></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<b><span style=\"color: #000000\">taak SS</span></b>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4EWb</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">V03</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">G. Van der Veken</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S)</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4LAa-NWa -NWb (Niet-CLIL)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">VH!</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">H. Van Orshaegen</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">2Lc</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">Q13</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><span style=\"color: #000000\">I. Hertoge</span></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<b><span style=\"color: #000000\">les</span></b>",
+              "background_color": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "MP",
+      "title": "Middagpauze",
+      "start_time": "12:05",
+      "end_time": "13:05",
+      "lines": [
+        {
+          "cells": {
+            "A": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "B": {
+              "html": "<span style=\"color: #000000\">12.50-13.05 uur: speelplaats G</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": {
+              "html": "<span style=\"color: #000000\">R. Peeters</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "B": {
+              "html": "<span style=\"color: #000000\">12.05-12.30 uur: middagstudie graad I, G33+34</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": {
+              "html": "<span style=\"color: #000000\">A. Van Den Heuvel</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "5",
+      "title": "5e lesuur",
+      "start_time": "13:05",
+      "end_time": "13:55",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">3GL-LAb-NWb (LW2)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">refter!</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">E. Deca</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4GL-LAb-HW (niet CLIL)</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">refter!</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">E. Deca</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">1Mc</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">G15!</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><span style=\"color: #000000\">WB T. Caers</span></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S) + taak SS</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">2Lb</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">Q12</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">A. Van Den Heuvel</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak (S)</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4EWa</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">W05!</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">WB R. Op De Beeck</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">les</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<b><span style=\"color: #000000\">1Md</span></b>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">G16</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><span style=\"color: #000000\">WB H. Van Looveren</span></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<b><span style=\"color: #000000\">studie</span></b>",
+              "background_color": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "6",
+      "title": "6e lesuur",
+      "start_time": "13:55",
+      "end_time": "14:45",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">4LAa</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">refter!</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">S. Verdegem</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S)</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">2Lb</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">refter!</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><span style=\"color: #000000\">S. Verdegem</span></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">taak (S)</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<b><span style=\"color: #000000\">1La</span></b>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<b><span style=\"color: #000000\">SP</span></b>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<b><span style=\"color: #000000\">A. Van Gils</span></b>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<b><span style=\"color: #000000\">opruimtaak SP G + voortuin</span></b>",
+              "background_color": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "P2",
+      "title": "Pauze",
+      "start_time": "13:55",
+      "end_time": "14:45",
+      "lines": []
+    },
+    {
+      "label": "7",
+      "title": "7de lesuur",
+      "start_time": "14:45",
+      "end_time": "15:35",
+      "lines": [
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">1Mb</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">refter!</span>",
+              "background_color": null
+            },
+            "F": {
+              "html": "<span style=\"color: #000000\">N. Claessen</span>",
+              "background_color": null
+            },
+            "G": null,
+            "H": null,
+            "I": {
+              "html": "<span style=\"color: #000000\">toets (S)</span>",
+              "background_color": null
+            }
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": null,
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": null,
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">Volgende klassen mogen om 14.45 uur naar huis. Leerlingen kunnen ook op school blijven en in de refter studeren.</span>",
+              "background_color": null
+            },
+            "C": null,
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "C": {
+              "html": "<b><span style=\"color: #000000\">1Ma</span></b>",
+              "background_color": null
+            },
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "C": {
+              "html": "<span style=\"color: #000000\">2Ma</span>",
+              "background_color": null
+            },
+            "D": null,
+            "E": {
+              "html": "<span style=\"color: #000000\">taak lln</span>",
+              "background_color": null
+            },
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "C": {
+              "html": "<span style=\"color: #000000\">3EWb</span>",
+              "background_color": null
+            },
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<span style=\"color: #000000\">*</span>",
+              "background_color": null
+            },
+            "C": {
+              "html": "<span style=\"color: #000000\">4EWa</span>",
+              "background_color": null
+            },
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<b><span style=\"color: #000000\">*</span></b>",
+              "background_color": null
+            },
+            "C": {
+              "html": "<span style=\"color: #000000\">4HW</span>",
+              "background_color": null
+            },
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        },
+        {
+          "cells": {
+            "A": null,
+            "B": {
+              "html": "<b><span style=\"color: #000000\">*</span></b>",
+              "background_color": null
+            },
+            "C": {
+              "html": "<b><span style=\"color: #000000\">2Lc</span></b>",
+              "background_color": null
+            },
+            "D": null,
+            "E": null,
+            "F": null,
+            "G": null,
+            "H": null,
+            "I": null
+          }
+        }
+      ]
+    }
+  ]
+}

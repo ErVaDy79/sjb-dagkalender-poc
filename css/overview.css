@@ -1,0 +1,19 @@
+/* ==============================
+   TWO-COLUMN OVERVIEW
+   ============================== */
+
+.content-wrapper {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    min-height: 0;
+    width: 100%;
+}
+
+.content-column {
+    min-height: 0;
+    min-width: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}

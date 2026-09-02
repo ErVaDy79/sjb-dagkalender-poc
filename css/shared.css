@@ -1,0 +1,160 @@
+/* ==============================
+   PAGE
+   ============================== */
+
+body {
+    margin: 0;
+}
+
+.calendar-page {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.calendar-header {
+    flex: none;
+}
+
+.calendar-date {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.calendar-status {
+    align-items: center;
+    box-sizing: border-box;
+    display: none;
+    flex: 1;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.calendar-page[data-page-state="loading"] .calendar-status,
+.calendar-page[data-page-state="error"] .calendar-status {
+    display: flex;
+}
+
+.calendar-page[data-page-state="loading"] .calendar-header,
+.calendar-page[data-page-state="loading"] .content-wrapper,
+.calendar-page[data-page-state="error"] .calendar-header,
+.calendar-page[data-page-state="error"] .content-wrapper {
+    display: none;
+}
+
+
+/* ==============================
+   SCALABLE CONTENT
+   ============================== */
+
+.content {
+    --scale: 1;
+
+    box-sizing: border-box;
+    display: flow-root;
+    font-size: calc(16px * var(--scale));
+}
+
+
+/* ==============================
+   CALENDAR CONTENT
+   ============================== */
+
+.calendar-block {
+    margin: 0 0 1.2em;
+}
+
+.calendar-block:last-child {
+    margin-bottom: 0;
+}
+
+.calendar-block--announcements {
+    border: calc(1px * var(--scale)) solid currentColor;
+    padding: calc(8px * var(--scale));
+}
+
+.calendar-block-header {
+    margin-bottom: calc(6px * var(--scale));
+}
+
+.calendar-block-title {
+    font-size: calc(20px * var(--scale));
+    margin: 0;
+}
+
+.calendar-block-time,
+.calendar-cell,
+.calendar-empty-message {
+    white-space: nowrap;
+}
+
+.calendar-block-time {
+    font-size: 0.75em;
+    font-weight: normal;
+    margin-left: 0.4em;
+}
+
+.calendar-line {
+    display: grid;
+    grid-template-columns: var(
+        --calendar-grid-columns,
+        repeat(var(--calendar-column-count), minmax(0, 1fr))
+    );
+    min-height: 1.2em;
+}
+
+.calendar-cell {
+    grid-row: 1;
+    min-width: 0;
+}
+
+.calendar-cell[data-occupied="true"] {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==============================
+   SCALABLE TYPOGRAPHY / SPACING
+   ============================== */
+
+.content h1 {
+    font-size: calc(32px * var(--scale));
+    margin-top: 0;
+    margin-bottom: calc(16px * var(--scale));
+}
+
+.content p {
+    margin-top: 0;
+    margin-bottom: calc(12px * var(--scale));
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   HIDDEN MEASUREMENT AREA
+   ============================== */
+
+#measurement-container {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    left: -10000px;
+    top: 0;
+    height: auto;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#measurement-content {
+    width: 100%;
+    box-sizing: border-box;
+}

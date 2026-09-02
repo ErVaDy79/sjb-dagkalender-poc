@@ -1,0 +1,58 @@
+/* ==============================
+   PAGE
+   ============================== */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slideshow-page {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+
+/* ==============================
+   SLIDE VIEWPORT
+   ============================== */
+
+.slideshow-viewport {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+}
+
+.slideshow-content,
+#calendar-slides {
+    min-width: 0;
+    width: 100%;
+}
+
+.slideshow-slide {
+    display: flow-root;
+    margin-bottom: 0;
+}
+
+.slideshow-slide[hidden] {
+    display: none;
+}
+
+
+/* ==============================
+   PAGE STATES
+   ============================== */
+
+.slideshow-page[data-page-state="loading"] .slideshow-viewport,
+.slideshow-page[data-page-state="error"] .slideshow-viewport {
+    display: none;
+}
